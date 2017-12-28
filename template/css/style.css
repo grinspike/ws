@@ -1,0 +1,711 @@
+body {
+  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  background: #24262F;
+  *border: 1px solid white;
+}
+/*DATETIMEPICKER*/
+.clearfix{*zoom:1}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}.clearfix:after{clear:both}.hide-text{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.input-block-level{display:block;width:100%;min-height:30px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.bootstrap-datetimepicker-widget{top:0;left:0;width:250px;padding:4px;margin-top:1px;z-index:3000;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget:before{content:'';display:inline-block;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #ccc;border-bottom-color:rgba(0,0,0,0.2);position:absolute;top:-7px;left:6px}.bootstrap-datetimepicker-widget:after{content:'';display:inline-block;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #fff;position:absolute;top:-6px;left:7px}.bootstrap-datetimepicker-widget.pull-right:before{left:auto;right:6px}.bootstrap-datetimepicker-widget.pull-right:after{left:auto;right:7px}.bootstrap-datetimepicker-widget>ul{list-style-type:none;margin:0}.bootstrap-datetimepicker-widget .timepicker-hour,.bootstrap-datetimepicker-widget .timepicker-minute,.bootstrap-datetimepicker-widget .timepicker-second{width:100%;font-weight:bold;font-size:1.2em}.bootstrap-datetimepicker-widget table[data-hour-format="12"] .separator{width:4px;padding:0;margin:0}.bootstrap-datetimepicker-widget .datepicker>div{display:none}.bootstrap-datetimepicker-widget .picker-switch{text-align:center}.bootstrap-datetimepicker-widget table{width:100%;margin:0}.bootstrap-datetimepicker-widget td,.bootstrap-datetimepicker-widget th{text-align:center;width:20px;height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget td.day:hover,.bootstrap-datetimepicker-widget td.hour:hover,.bootstrap-datetimepicker-widget td.minute:hover,.bootstrap-datetimepicker-widget td.second:hover{background:#eee;cursor:pointer}.bootstrap-datetimepicker-widget td.old,.bootstrap-datetimepicker-widget td.new{color:#999}.bootstrap-datetimepicker-widget td.active,.bootstrap-datetimepicker-widget td.active:hover{color:#fff;background-color:#006dcc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);border-color:#04c #04c #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#04c;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget td.active:hover,.bootstrap-datetimepicker-widget td.active:hover:hover,.bootstrap-datetimepicker-widget td.active:active,.bootstrap-datetimepicker-widget td.active:hover:active,.bootstrap-datetimepicker-widget td.active.active,.bootstrap-datetimepicker-widget td.active:hover.active,.bootstrap-datetimepicker-widget td.active.disabled,.bootstrap-datetimepicker-widget td.active:hover.disabled,.bootstrap-datetimepicker-widget td.active[disabled],.bootstrap-datetimepicker-widget td.active:hover[disabled]{color:#fff;background-color:#04c;*background-color:#003bb3}.bootstrap-datetimepicker-widget td.active:active,.bootstrap-datetimepicker-widget td.active:hover:active,.bootstrap-datetimepicker-widget td.active.active,.bootstrap-datetimepicker-widget td.active:hover.active{background-color:#039 \9}.bootstrap-datetimepicker-widget td.disabled,.bootstrap-datetimepicker-widget td.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget td span{display:block;width:47px;height:54px;line-height:54px;float:left;margin:2px;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}.bootstrap-datetimepicker-widget td span:hover{background:#eee}.bootstrap-datetimepicker-widget td span.active{color:#fff;background-color:#006dcc;background-image:-moz-linear-gradient(top,#08c,#04c);background-image:-webkit-gradient(linear,0 0,0 100%,from(#08c),to(#04c));background-image:-webkit-linear-gradient(top,#08c,#04c);background-image:-o-linear-gradient(top,#08c,#04c);background-image:linear-gradient(to bottom,#08c,#04c);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc',endColorstr='#ff0044cc',GradientType=0);border-color:#04c #04c #002a80;border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);*background-color:#04c;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}.bootstrap-datetimepicker-widget td span.active:hover,.bootstrap-datetimepicker-widget td span.active:active,.bootstrap-datetimepicker-widget td span.active.active,.bootstrap-datetimepicker-widget td span.active.disabled,.bootstrap-datetimepicker-widget td span.active[disabled]{color:#fff;background-color:#04c;*background-color:#003bb3}.bootstrap-datetimepicker-widget td span.active:active,.bootstrap-datetimepicker-widget td span.active.active{background-color:#039 \9}.bootstrap-datetimepicker-widget td span.old{color:#999}.bootstrap-datetimepicker-widget td span.disabled,.bootstrap-datetimepicker-widget td span.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget th.switch{width:145px}.bootstrap-datetimepicker-widget th.next,.bootstrap-datetimepicker-widget th.prev{font-size:21px}.bootstrap-datetimepicker-widget th.disabled,.bootstrap-datetimepicker-widget th.disabled:hover{background:0;color:#999;cursor:not-allowed}.bootstrap-datetimepicker-widget thead tr:first-child th{cursor:pointer}.bootstrap-datetimepicker-widget thead tr:first-child th:hover{background:#eee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}.bootstrap-datetimepicker-widget.left-oriented:before{left:auto;right:6px}.bootstrap-datetimepicker-widget.left-oriented:after{left:auto;right:7px}
+
+
+.title-page{
+  color : #fff;
+  font-size: 1.5vw;
+  *border: 1px solid red;
+}
+
+ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  *padding: 15px 4px 17px 0;
+  padding: 1vw 0.5vw 1vw 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+ul li {
+  font: bold 26px/18px sans-serif;
+  font-size: 1.8vw;
+  display: inline-block;
+  margin-right: -4px;
+  margin-right: -1vw;
+  position: relative;
+  padding: 15px 20px;
+  padding: 1vw 1.5vw;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+ul li:hover {
+  background: #555;
+  color: #fff;
+}
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  top: 3vw;
+  left: 0;
+  width: 250px;
+  width: 15vw;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  width : 250px;
+  width: 15vw;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+.box {
+	*float:left;
+	border-left: 10px solid #EBECE6;
+	box-shadow: 7px 0 7px -2px #cccccc;
+        margin : 0 auto; 
+        width : 900px;
+        margin-top : 56px;
+}
+.container {
+	border-left: 2px solid #DEDEDE;
+	
+	padding:10px 20px 10px 20px;
+}
+.title {
+	color:f44;
+	text-transform:uppercase;
+	font-weight:600;
+	color:#207BB2;
+	font-size:15px;
+}
+.table {
+	display:table;
+	margin:10px 0px 10px 0px;
+}
+.row {
+	display:table-row;
+	
+}
+.cell {
+	display:table-cell;
+	width:1000px;
+	padding:10px;
+	font-weight:600;
+	color:#625B55;
+	border-top:4px solid #CBCCCE;
+	border-bottom:1px solid #CBCCCE;
+
+}
+.a {
+	background-color:#EDFBFE;
+}
+.b {
+	background-color:#F5F5F5;
+}
+.celltext {
+	display:table-cell;
+	color:#726E7D;
+	line-height:30px;
+	width:225px;
+	text-align:center;
+	font-size:14px;
+}
+.bottom {
+	margin:15px 25px 0px 0px;
+	color:white;
+	border-radius:5px;
+	padding:13px;
+	font-size:13px;
+	text-transform:uppercase;
+	*float:left;
+	background-image:linear-gradient(to top, #0C4163, #24D8FB);
+}
+
+
+
+#teamlist{
+    color : #ffff33;
+    margin : 0 auto;
+    *width : 1000px;
+    
+}
+
+#teamlist tr td { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  *width : 250px;
+  font-size: 1.4vw;
+  padding : 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  *text-align: center;
+}
+#teamlist tr td:hover { 
+  background: #666; 
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  color : #ffff33;
+}
+
+
+.teamfont{
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;  
+  font-size: 22px;
+  font-size: 2.2vw;
+  *width : 30vw;
+  *margin : 0 auto;
+}
+#team_structure{
+  margin: 0 auto;    
+  }
+  
+#team_structure tr td{
+  background: #555; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  font-size: 22px;
+  padding : 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  *text-align: center;    
+  }
+
+
+#team_structure tr td input{
+  background: #888; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  font-size: 22px;
+  padding : 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  *text-align: center;    
+}
+
+#team_structure tr td label{
+  *color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  font-size: 22px;
+  padding : 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  *text-align: center;    
+}
+
+.page-wrapper{
+  margin : 0 auto;
+  *border : 1px solid gray;  
+}
+
+.page-footer{
+  margin : 0 auto;
+  *border : 1px solid gray;  
+}
+
+.footer-bottom {
+    padding-top: 1115px;
+}
+
+.footer-bottom p {
+    color: #363432;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-left: 15px;
+}
+
+.footer-bottom p span a {
+    color: #FE980F;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.container {
+    border-bottom: 1px solid #f5f5f5;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.pull-left {
+    margin-right: 22px
+}
+
+
+.contact_text{
+  font: bold 1vw sans-serif;
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  letter-spacing: 3px;
+}
+
+
+.admin-edit-box{
+  margin : 0 auto;  
+  border-spacing: 11px;
+}
+
+.admin-edit-box tr td{
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; 
+  border : 2px solid steelblue;
+  background: #00d9ff;
+}
+
+.admin-edit-button-a{
+  font-size: 1.9vw;
+  font-weight: bold;
+  cursor: pointer;
+  padding : 1vw;
+  display: block;
+  color : #EDFBFE;
+    
+}
+
+
+#teamroleslist{
+    color : #ffff33;
+    margin : 0 auto;
+    width : 60vw;
+}
+
+#teamroleslist tr td { 
+  background: #555; 
+  color: #fff;
+  font-size: 1vw;
+  cursor: pointer;
+}
+#teamroleslist tr td:hover { 
+    background: #666; 
+    color : #ffff33;
+}
+
+.cupLeagueControl,.cupOffSeasonControl{
+    margin : 0 auto;
+    color : #ff33ff;
+}
+
+
+.cupLeagueControl tr td, .cupOffSeasonControl tr td{
+    border : 2px solid #789;
+    background: #789;
+    cursor : pointer;
+    font-size: 1.53vw;
+    background: #00d9ff;
+}
+
+.cupControlBox{
+    border : 1px solid #346F75;
+    display: inline-block;
+    
+}
+
+.teamControlButton{
+    font-size: 2vw;
+    cursor: pointer;
+    font-weight: bolder; 
+    background: #199;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* ------------------------------------------------ */
+
+.modalSelectTeam {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		/*background-image: url("images/wash-white-30.gif");*/
+		z-index: 99;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		display: none;
+		*pointer-events: none;
+	}
+
+	.modalSelectTeam:target {
+		display: block;
+		*pointer-events: auto;
+	}
+
+	.modalSelectTeam > div {
+		width: 400px;
+		position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+		background: -moz-linear-gradient(#ffffff, #0077BB);
+		background: -webkit-linear-gradient(#ffffff, #0077BB);
+		background: -o-linear-gradient(#ffffff, #0077BB);
+	}
+
+	.close_modalSelectTeam {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: 0px;
+		text-align: center;
+		top: 0px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close_modalSelectTeam:hover { background: #00d9ff; }
+	
+    
+    
+    /* ------------------------------------------------ */
+    
+    
+.battle{
+    width: 50vw;
+    border: 1px solid #04c;
+    background: #789;   
+    margin: 0 auto;    
+    margin-bottom: 2vw;
+    padding : 0.3vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+
+}
+
+.battle input{
+    width: 25vw;
+    margin: 2vw;    
+    display : block;
+    font-size: 1.2vw;
+    
+} 
+
+
+.battle table{
+    width: 46vw;
+    margin: 0 auto;
+}
+
+.battle table tr td{
+    width: 20vw;
+    *height: 17vw;
+    background-color: #f5f5f5;
+    border : 2px solid #633;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+}
+
+.battleLogoImage{
+    width: 9vw;
+    height: 9 vw;
+}
+
+
+
+
+.battleStripTitleLeft{
+    width : 19vw;
+    background: -o-linear-gradient(left, #666, #f5f5f5);
+    background: -moz-linear-gradient(left, #666, #f5f5f5);
+    background: -webkit-linear-gradient(left, #666, #f5f5f5);
+    text-align: left;
+    padding: 0.6vw;
+    font-size: 1.3vw;
+    *border-left: 7px solid #333;
+
+}
+
+.battleStripTitleRight{
+    width : 19vw;
+    background: -o-linear-gradient(right, #666, #f5f5f5);
+    background: -moz-linear-gradient(right, #666, #f5f5f5);
+    background: -webkit-linear-gradient(right, #666, #f5f5f5);
+    text-align: right;
+    padding: 0.6vw;
+    font-size: 1.3vw;
+    *border-right: 7px solid #333;
+    display: inline-block;
+      
+}
+
+.battleTimeTitle{
+    width : 40vw;
+    background: -o-linear-gradient(bottom, #789, #f5f5f5);
+    background: -moz-linear-gradient(bottom, #789, #f5f5f5);
+    background: -webkit-linear-gradient(bottom, #789, #f5f5f5);
+    text-align: right;
+    padding: 0.28vw;
+    margin : 0.25vw;
+    margin : 0 auto;
+    font-size: 1.5vw;
+    text-align: center;
+    *border-right: 7px solid #333;
+    *border-left: 7px solid #333;
+}
+
+.battleWinnerTitle{
+    width : 40vw;
+    text-align: right;
+    padding: 0.28vw;
+    margin : 0.25vw;
+    margin : 0 auto;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.battleAssignWinner{
+    background: #00d9ff;
+    font-size: 0.9vw;
+    *padding: 0.2vw;
+    cursor: pointer;
+}
+
+.newCupOrLeague{
+    background: #00d9ff;
+    font-size:1.19vw;
+    cursor: pointer;
+}
+
+.battleWinnerName{
+    background: #ffff33;
+    font-weight: bolder;
+}
+
+.battleEdit{
+    width: 2vw;
+    height: 2vw;
+}
+
+.battleDelete{
+    width: 2vw;
+    height: 2vw;
+}
+    
+
+
+.ControlBoxCupOffSeasonTeamCount{
+    display : none;
+    width: 31vw;
+    margin: 0 auto;
+}
+
+.ControlBoxCupOffSeasonTeamCount tr td{
+    background: #00d9ff;
+    width: 5vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+.selectParticipants{
+    width : 70vw;
+    margin : 0 auto;
+    display: none;
+}
+
+.selectParticipants tr td{
+    border : 1px solid black;
+}
+
+.newCupSelectAll,.newCupDeSelectAll{
+    background: #00d9ff;
+    font-size: 1.3vw;
+    cursor: pointer;
+    width : 10vw;
+    margin : 0 auto;
+}
+
+
+.teamMemberListPntArray,.teamMemberListAllArray { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+  *width : 250px;
+  font-size: 1.04vw;
+  cursor: pointer;
+  *text-align: center;
+}
+.teamMemberListPntArray:hover, .teamMemberListAllArray:hover { 
+  background: #666; 
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  color : #ffff33;
+}
+
+#createCupOffSeasonButton{
+    height: 4vw;
+    width: 15vw;
+    border: 1px solid #04c;
+    background: #00d9ff;
+    margin: 0 auto;    
+    font-size: 2.5vw;
+    align-content:  center;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+    display: none;
+    cursor : pointer;    
+}
+
+#shuffleCupOffSeasonButton{
+    height: 4vw;
+    width: 15vw;
+    border: 1px solid #04c;
+    background: #00d9ff;
+    margin: 0 auto;    
+    font-size: 2.5vw;
+    align-content:  center;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+    cursor : pointer;    
+}
+#timeStarterCupOffSeason{
+    width: 40vw;
+    border: 1px solid #04c;
+    background: #789;   
+    margin: 0 auto;    
+    margin-bottom: 2vw;
+    padding : 0.3vw;
+    -webkit-border-radius: 1vw;
+    -moz-border-radius: 1vw;
+    border-radius: 1vw;
+    display : none;
+}
+
+
+.team-name{
+    fill:#ccc;
+    *cursor: pointer;    
+}
+.team-name-winner{
+    fill:#2d2;
+    *cursor: pointer;    
+}
+.team-name-font{
+    font-size: 0.9vw;
+    *border: 1px solid red;
+    cursor: default; 
+}
+.battle-time-font{
+    fill : #ffff33;
+}
+.a1{
+    position: absolute;
+    border : 2px solid greenyellow;
+}
+
+.tournament-table{
+    *position: absolute;
+    *border : 1px solid red;
+    *width: 90vw;
+    *height : 80vw;
+    *margin : 0 auto;
+    *float: right;
+    *background: #345;
+}
+
+.bracket-line{
+    fill:none;
+    stroke:#F0F0F0;
+    stroke-width:2px;
+}
+.svg-control-winner{
+    fill:#00d9ff;
+}
+.svg-control-font-winner{
+    font-size: 0.9vw;
+    *border: 1px solid red;
+    cursor: pointer;
+}
+.svg-control-edit{
+    fill:#00d9ff;
+}
+.svg-control-font-edit{
+    font-size: 0.9vw;
+    *border: 1px solid red;
+    cursor: pointer;
+}
+
+#imgShuffle{
+    width: 4vw;
+    height: 4vw;
+}
+
+#shuffleContainer{
+    width: 40vw;
+    background: #405967;
+    border: 11px solid #000;
+    display: none;
+}
+
+.archive{
+    font-size: 1.9vw;
+}
